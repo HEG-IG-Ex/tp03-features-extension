@@ -11,10 +11,10 @@ public class Main {
 
     /* Méthode principale : teste tout le personnel, affiche les taux, puis contacte le personnel positif d'une catégorie choisie aléatoirement */
     public static void main(String[] args) {
-        Map lst = testerToutLePersonnel(Bdd.getLstPersonnel());
-        /*afficherTauxParCategorie(lst);
+        Map mp = testerToutLePersonnel(Bdd.getLstPersonnel());
+        /*afficherTauxParCategorie(lst);*/
         int categorie = (int) (Math.random() * 3);   // choisi aléatoirement une catégorie entre 0 et 2 (pour contacter ces personnes)
-        contacterPersonnelPositif(lst, categorie);*/
+        contacterPersonnelPositif(mp, categorie);
     }
 
     /* Teste tout le personnel, conserve le résultat, puis retourne une collection contenant tous les résultats.
@@ -58,10 +58,15 @@ public class Main {
     }
 
     /* Récupère et affiche le contact des personnes positives d'une certaine catégorie (reçue en paramètre) */
-    private static void contacterPersonnelPositif(Collection lst, int categorie) {
+    private static void contacterPersonnelPositif(Map<Integer, Collection<TestResult>> mp, int categorie) {
         System.out.println("Personnes positives de la catégorie " + categorie + (categorie == 0 ? " (-25 ans)" : categorie == 1 ? " (25-49 ans)" : " (50+ ans)"));
         // TODO: boucle de récupération des personnes testées d'une certaine catégorie ==> appeler lst.get(categorie)
         // TODO: vérifier si cette personne est positive (cette information a du être conservée avec (et non pas dans !) Personnel)
         // TODO: si oui, afficher la personne ainsi que ses données de contact ==> utiliser getContact()
+        for (TestResult  tr : mp.get(categorie)) {
+            if(tr.isPositive()){
+                System.out.println(tr.getPerson().toString() + " - " + tr.getPerson().getContact());
+            }
+        }
     }
 }

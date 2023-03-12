@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b95719-0f3d-4175-8fc5-28a305c531b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/outils/TestResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestCovid/metier/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestCovid/metier/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestCovid/outils/TestResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestCovid/outils/TestResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outils/TestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outils/TestResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +91,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/metier/Main.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="1" />
+          <line>16</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="mp.get(categorie)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
