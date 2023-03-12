@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b95719-0f3d-4175-8fc5-28a305c531b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/outils/TestList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestCovid/metier/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestCovid/metier/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestCovid/outils/TestResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestCovid/outils/TestResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outils/TestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outils/TestResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,18 +86,10 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/metier/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="mp.get(categorie)" />
+        <watch expression="this.size()" />
+        <watch expression="this.getNbPositive()" />
       </configuration>
     </watches-manager>
   </component>
